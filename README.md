@@ -7,7 +7,7 @@ Molim vas izmijenite ovaj dokument kako biste u njemu naveli naziv i kratak opis
 
 A sada, vrijeme je za prvi korak rada na vašem projektu. 🙂 Za upis/opis vašeg programskog proizvoda molimo vas koristite **predložak** koji je naveden u nastavku. Započnite tako da kliknete na *olovku* u desnom gornjem kutu ovoga dokumenta te izbrišite sve što je iznad _Naziva projekta_, kao i sve upute koje su navedene u zagradama u predlošku ispod.
 
-**Project Title: demosPlaying**
+**Project Title: foodPlan**
 
 **Student Information**
 
@@ -15,30 +15,42 @@ A sada, vrijeme je za prvi korak rada na vašem projektu. 🙂 Za upis/opis vaš
 |--------------|------------------------------|------------|-----------------|
 | GOMES Maxence| gmaxence24@student.foi.hr   | 000000000  | Supergmax       |
 
-**Domain Description**
+# Customer Satisfaction System @ SCVZ Student Restaurant
 
-This is a project that will bring together various development skills including database management, security, and bulk user management.
+Welcome to the README page for the Customer Satisfaction System at SCVZ Student Restaurant project! This system aims to revolutionize the dining experience for students at the local student center of Varaždin by implementing an efficient information system to enhance restaurant operations and improve customer satisfaction. Below you will find all the necessary information about the project, its specifications, tasks, and available resources.
 
-**Project Specification**
 
-- Proficiency in web development
-- Proficiency in C++ application development
-- Proficiency in database usage
-- Proficiency in UX/UI design for users
-- Proficiency in managing all users within the application or website
+## Domain Description
+The project focuses on enhancing the operations of the SCVZ student restaurant by implementing an information system that facilitates customer feedback, order management, and menu optimization.
 
-**Task**
+## Project Specification
+### Functional Requirements:
+1. **Feedback System**: Allow students to provide reviews of meals consumed, including rating taste and portion size, with an optional comment feature.
+2. **Coupon Reward System**: Reward users with gift points for providing reviews, which can be exchanged for coupons.
+3. **Order Management**: Enable à la carte orders through the application to reduce waiting time during peak hours.
+4. **Order Tracking**: Provide students with the ability to track the status of their orders.
+5. **Employee Reporting**: Allow employees to generate reports on popular dishes and preparation speed.
+6. **Order Status Tracking**: Implement order statuses (Order created, In process, Food prepared, Served) with timestamps for tracking purposes.
+7. **Menu Management**: Allow restaurant employees to create daily menus with mandatory entries for each day of the week.
+8. **User Authentication**: Enable student login via identification card or manually using student credentials.
 
-Proof of Concept (POC):
-- Create UX/UI design
-- Create database for user creation
-- Create the first game
+### Non-Functional Requirements:
+1. **User Interface Design**: Ensure an intuitive and visually appealing user interface to enhance user experience.
+2. **Performance Optimization**: Ensure the system operates efficiently, especially during peak hours.
 
-Final Product:
-- Develop multiple games
-- Attract users from all countries throughout the day with dynamic message translation and adaptation of the application/website
-- ...
+## Task
+The task involves developing and implementing the aforementioned functional and non-functional requirements to create a robust and user-friendly customer satisfaction system for the SCVZ student restaurant.
 
-**Resources**
+## Proof of Concept (POC)
+A proof of concept will be developed to demonstrate the core functionalities of the system and validate its feasibility before full-scale development.
 
-Researching
+## Resources
+- **Development Platform:** TBD
+- **Programming Languages:** TBD
+- **Frameworks/Libraries:** TBD
+- **Database:** TBD
+
+Stay tuned for updates on the development progress and milestones!
+
+---
+*This README template was crafted with ❤️ by Supergmax.*
