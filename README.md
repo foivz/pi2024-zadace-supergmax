@@ -7,27 +7,38 @@ Molim vas izmijenite ovaj dokument kako biste u njemu naveli naziv i kratak opis
 
 A sada, vrijeme je za prvi korak rada na vašem projektu. 🙂 Za upis/opis vašeg programskog proizvoda molimo vas koristite **predložak** koji je naveden u nastavku. Započnite tako da kliknete na *olovku* u desnom gornjem kutu ovoga dokumenta te izbrišite sve što je iznad _Naziva projekta_, kao i sve upute koje su navedene u zagradama u predlošku ispod.
 
-# Naziv projekta
-(U redak iznad navedite naziv projekta koji ste dobili za analizu!)
+**Project Title: demosPlaying**
 
-## Podaci o studentu
-(Ispod promijenite samo drugi redak tablice!)
+**Student Information**
 
-Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
-------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
+| Full Name    | Email Address (FOI)          | JMBAG      | Github Username |
+|--------------|------------------------------|------------|-----------------|
+| GOMES Maxence| gmaxence24@student.foi.hr   | 000000000  | Supergmax       |
 
+**Domain Description**
 
-## Opis domene
-(Vlastitim riječima opišite domenu ili problem koji pokriva projekt vaše zadaće!)
+This is a project that will bring together various development skills including database management, security, and bulk user management.
 
-## Specifikacija projekta
-(Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
+**Project Specification**
 
-## Zadatak
-(U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)
+- Proficiency in web development
+- Proficiency in C++ application development
+- Proficiency in database usage
+- Proficiency in UX/UI design for users
+- Proficiency in managing all users within the application or website
 
-## Resursi
-(Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete koristiti na wiki stranicama smjestite u mapu dokumentacije u repozitoriju!)
+**Task**
 
-Svi resursi nalaze se u mapi _Documentation_.
+Proof of Concept (POC):
+- Create UX/UI design
+- Create database for user creation
+- Create the first game
+
+Final Product:
+- Develop multiple games
+- Attract users from all countries throughout the day with dynamic message translation and adaptation of the application/website
+- ...
+
+**Resources**
+
+Researching
