@@ -53,4 +53,4 @@ A proof of concept will be developed to demonstrate the core functionalities of 
 Stay tuned for updates on the development progress and milestones!
 
 ---
-*This README template was crafted with ❤️ by Supergmax.*
+*This README was crafted with ❤️ by Supergmax.*
