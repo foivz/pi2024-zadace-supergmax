@@ -11,9 +11,9 @@ A sada, vrijeme je za prvi korak rada na vašem projektu. 🙂 Za upis/opis vaš
 
 **Student Information**
 
-| Full Name    | Email Address (FOI)          | JMBAG      | Github Username |
-|--------------|------------------------------|------------|-----------------|
-| GOMES Maxence| gmaxence24@student.foi.hr   | 000000000  | Supergmax       |
+| Full Name    | Email Address (FOI)          | Github Username |
+|--------------|------------------------------|-----------------|
+| GOMES Maxence| gmaxence24@student.foi.hr   | Supergmax       |
 
 # Customer Satisfaction System @ SCVZ Student Restaurant
 
