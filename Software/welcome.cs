@@ -18,7 +18,7 @@ namespace Evaluation_Manager
 
         private void UpdateWelcomeMessage()
         {
-            label1.Text = $"Welcome {username}! Your role is {role}.";
+            label1.Text = $"Welcome back {role}, {username}!";
         }
 
         private void fontDialog1_Apply(object sender, EventArgs e)
