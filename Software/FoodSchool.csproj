@@ -57,6 +57,30 @@
     <Compile Include="FoodSpecificationRepository.Designer.cs">
       <DependentUpon>FoodSpecificationRepository.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLastOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLastOrders.Designer.cs">
+      <DependentUpon>FrmLastOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrderMeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderMeal.Designer.cs">
+      <DependentUpon>FrmOrderMeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPreferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPreferences.Designer.cs">
+      <DependentUpon>FrmPreferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealFoodSpecification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealFoodSpecification.Designer.cs">
+      <DependentUpon>MealFoodSpecification.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrderedMealRepository.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,11 +97,11 @@
     <Compile Include="FrmStaff.Designer.cs">
       <DependentUpon>FrmStaff.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmStudents.cs">
+    <Compile Include="FrmStudentMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmStudents.Designer.cs">
-      <DependentUpon>FrmStudents.cs</DependentUpon>
+    <Compile Include="FrmStudentMenu.Designer.cs">
+      <DependentUpon>FrmStudentMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAdmin.cs">
       <SubType>Form</SubType>
@@ -128,8 +152,8 @@
     <EmbeddedResource Include="FrmStaff.resx">
       <DependentUpon>FrmStaff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmStudents.resx">
-      <DependentUpon>FrmStudents.cs</DependentUpon>
+    <EmbeddedResource Include="FrmStudentMenu.resx">
+      <DependentUpon>FrmStudentMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MealListRepository.cs.resx">
       <DependentUpon>MealListRepository.cs.cs</DependentUpon>

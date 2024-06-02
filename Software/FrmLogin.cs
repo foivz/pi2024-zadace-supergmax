@@ -29,13 +29,9 @@ namespace Evaluation_Manager
 
                 if (user != null && txtPassword.Text == user.Password)
                 {
-                    LoggedUser = user;
-
-                    // Ouvrir la page de bienvenue avec les informations de l'utilisateur
-                    welcome welcomePage = new welcome(user.Username, user.Role, user);
-                    Hide();
-                    welcomePage.ShowDialog();
-                    Close();
+                    FrmStudentMenu frmStudentMenu = new FrmStudentMenu(user);
+                    frmStudentMenu.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -43,6 +39,7 @@ namespace Evaluation_Manager
                 }
             }
         }
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {

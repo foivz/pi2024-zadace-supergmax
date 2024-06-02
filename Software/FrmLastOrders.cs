@@ -1,38 +1,22 @@
 ﻿using Evaluation_Manager.Repositories;
-using System;
 using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Windows.Forms;
+using System;
 
 namespace Evaluation_Manager
 {
-    public partial class FrmStudents : Form
+    public partial class FrmLastOrders : Form
     {
         private string connectionString = ConfigurationManager.ConnectionStrings["DbConnectionString"].ConnectionString;
         private User loggedInUser;
 
-        public FrmStudents(User user)
+        public FrmLastOrders(User user)
         {
             InitializeComponent();
             loggedInUser = user;
-            LoadMealList();
             LoadOrderedMeals();
-        }
-
-        private void LoadMealList()
-        {
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-                string sql = "SELECT MealID, MealName, Description FROM MealList";
-                using (SqlDataAdapter adapter = new SqlDataAdapter(sql, connection))
-                {
-                    DataTable mealTable = new DataTable();
-                    adapter.Fill(mealTable);
-                    dgvMealList.DataSource = mealTable;
-                }
-            }
         }
 
         private void LoadOrderedMeals()
@@ -56,19 +40,11 @@ namespace Evaluation_Manager
             }
         }
 
-        private void btnOrderMeal_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
-            if (dgvMealList.SelectedRows.Count > 0)
-            {
-                int mealID = Convert.ToInt32(dgvMealList.SelectedRows[0].Cells["MealID"].Value);
-                OrderedMealRepository repository = new OrderedMealRepository();
-                repository.AddOrderedMeal(loggedInUser.UserID, mealID, DateTime.Now);
-                LoadOrderedMeals();
-            }
-            else
-            {
-                MessageBox.Show("Please select a meal to order.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            FrmStudentMenu frmStudentMenu = new FrmStudentMenu(loggedInUser);
+            frmStudentMenu.Show();
+            this.Close();
         }
     }
 }

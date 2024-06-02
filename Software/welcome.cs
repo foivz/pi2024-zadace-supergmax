@@ -39,7 +39,7 @@ namespace Evaluation_Manager
             }
             else if (loggedInUser.Role == "Student")
             {
-                nextForm = new FrmStudents(loggedInUser);
+                nextForm = new FrmStudentMenu(loggedInUser);
             }
             else if (loggedInUser.Role == "Staff")
             {
