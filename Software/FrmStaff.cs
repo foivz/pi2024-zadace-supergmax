@@ -2,7 +2,7 @@
 
 namespace Evaluation_Manager
 {
-    internal class FrmStudents : Form
+    internal class FrmStaff : Form
     {
     }
 }

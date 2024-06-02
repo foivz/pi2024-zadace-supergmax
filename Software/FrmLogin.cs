@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Evaluation_Manager.Repositories;
 using System.Windows.Forms;
-using Evaluation_Manager.Repositories;
+using System;
 
 namespace Evaluation_Manager
 {
@@ -31,12 +31,10 @@ namespace Evaluation_Manager
                 {
                     LoggedUser = user;
 
-                    // Afficher un pop-up avec le rôle de l'utilisateur
-                    MessageBox.Show($"Welcome {user.Username}! Your role is {user.Role}.", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    FrmStudents frmStudents = new FrmStudents();
+                    // Ouvrir la page de bienvenue avec les informations de l'utilisateur
+                    welcome welcomePage = new welcome(user.Username, user.Role);
                     Hide();
-                    frmStudents.ShowDialog();
+                    welcomePage.ShowDialog();
                     Close();
                 }
                 else
@@ -44,6 +42,11 @@ namespace Evaluation_Manager
                     MessageBox.Show("Wrong credentials!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // Ajoutez votre code de gestion d'événement ici, si nécessaire.
         }
     }
 }

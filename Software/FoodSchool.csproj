@@ -53,6 +53,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdmin.Designer.cs">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.cs">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEvaluation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,11 +83,11 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmStudents.cs">
+    <Compile Include="StudentAccess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmStudents.Designer.cs">
-      <DependentUpon>FrmStudents.cs</DependentUpon>
+    <Compile Include="StudentAccess.Designer.cs">
+      <DependentUpon>StudentAccess.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\Person.cs" />
@@ -87,8 +105,8 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmStudents.resx">
-      <DependentUpon>FrmStudents.cs</DependentUpon>
+    <EmbeddedResource Include="StudentAccess.resx">
+      <DependentUpon>StudentAccess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,7 +116,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -114,6 +136,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dlls\DBLayer.dll" />
+    <None Include="Resources\background.png" />
+    <None Include="Resources\file-dr0K4mcxk2wnLZuSUau2yrij.png" />
+    <None Include="Resources\birdy.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
