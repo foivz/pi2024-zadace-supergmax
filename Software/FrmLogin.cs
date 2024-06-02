@@ -1,22 +1,12 @@
-﻿using Evaluation_Manager.Models;
-using Evaluation_Manager.Repositories;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
-
-using System.Data.SqlClient;
+using Evaluation_Manager.Repositories;
 
 namespace Evaluation_Manager
 {
     public partial class FrmLogin : Form
     {
-        public static Teacher LoggedTeacher { get; private set; }
+        public static User LoggedUser { get; private set; }
 
         public FrmLogin()
         {
@@ -35,10 +25,15 @@ namespace Evaluation_Manager
             }
             else
             {
-                var teacher = TeacherRepository.GetTeacher(txtUsername.Text);
+                var user = UserRepository.GetUser(txtUsername.Text);
 
-                if (teacher != null && txtPassword.Text == teacher.Password)
+                if (user != null && txtPassword.Text == user.Password)
                 {
+                    LoggedUser = user;
+
+                    // Afficher un pop-up avec le rôle de l'utilisateur
+                    MessageBox.Show($"Welcome {user.Username}! Your role is {user.Role}.", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     FrmStudents frmStudents = new FrmStudents();
                     Hide();
                     frmStudents.ShowDialog();
