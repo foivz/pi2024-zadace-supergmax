@@ -53,17 +53,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaff.Designer.cs">
+      <DependentUpon>FrmStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudents.Designer.cs">
+      <DependentUpon>FrmStudents.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAdmin.Designer.cs">
       <DependentUpon>FrmAdmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmStaff.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmStudents.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="welcome.cs">
       <SubType>Form</SubType>
@@ -83,12 +89,6 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentAccess.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentAccess.Designer.cs">
-      <DependentUpon>StudentAccess.cs</DependentUpon>
-    </Compile>
     <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Student.cs" />
@@ -105,8 +105,11 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentAccess.resx">
-      <DependentUpon>StudentAccess.cs</DependentUpon>
+    <EmbeddedResource Include="FrmStaff.resx">
+      <DependentUpon>FrmStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudents.resx">
+      <DependentUpon>FrmStudents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
