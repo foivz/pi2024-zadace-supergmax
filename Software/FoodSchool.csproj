@@ -53,6 +53,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FoodSpecificationRepository.cs" />
+    <Compile Include="FoodSpecificationRepository.Designer.cs">
+      <DependentUpon>FoodSpecificationRepository.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderedMealRepository.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderedMealRepository.Designer.cs">
+      <DependentUpon>OrderedMealRepository.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealListRepository.cs.cs" />
+    <Compile Include="MealListRepository.cs.Designer.cs">
+      <DependentUpon>MealListRepository.cs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmStaff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +113,12 @@
     <Compile Include="Repositories\StudentRepository.cs" />
     <Compile Include="Repositories\TeacherRepository.cs" />
     <Compile Include="UserRepository.cs" />
+    <EmbeddedResource Include="FoodSpecificationRepository.resx">
+      <DependentUpon>FoodSpecificationRepository.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEvaluation.resx">
       <DependentUpon>FrmEvaluation.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmStudents.resx">
       <DependentUpon>FrmStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealListRepository.cs.resx">
+      <DependentUpon>MealListRepository.cs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

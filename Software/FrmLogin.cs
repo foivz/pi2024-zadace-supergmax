@@ -1,6 +1,6 @@
-﻿using Evaluation_Manager.Repositories;
+﻿using System;
 using System.Windows.Forms;
-using System;
+using Evaluation_Manager.Repositories;
 
 namespace Evaluation_Manager
 {
@@ -32,7 +32,7 @@ namespace Evaluation_Manager
                     LoggedUser = user;
 
                     // Ouvrir la page de bienvenue avec les informations de l'utilisateur
-                    welcome welcomePage = new welcome(user.Username, user.Role);
+                    welcome welcomePage = new welcome(user.Username, user.Role, user);
                     Hide();
                     welcomePage.ShowDialog();
                     Close();

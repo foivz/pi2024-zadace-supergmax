@@ -1,24 +1,23 @@
-﻿using System;
+﻿using Evaluation_Manager.Repositories;
+using System;
 using System.Windows.Forms;
 
 namespace Evaluation_Manager
 {
     public partial class welcome : Form
     {
-        private string username;
-        private string role;
+        private User loggedInUser;
 
-        public welcome(string username, string role)
+        public welcome(string username, string role, User user)
         {
             InitializeComponent();
-            this.username = username;
-            this.role = role;
-            UpdateWelcomeMessage();
+            this.loggedInUser = user;
+            UpdateWelcomeMessage(username, role);
         }
 
-        private void UpdateWelcomeMessage()
+        private void UpdateWelcomeMessage(string username, string role)
         {
-            label1.Text = $"Welcome back {role}, {username}!";
+            label1.Text = $"Welcome {username}! Your role is {role}.";
         }
 
         private void fontDialog1_Apply(object sender, EventArgs e)
@@ -34,15 +33,15 @@ namespace Evaluation_Manager
             // Redirection based on user role
             Form nextForm = null;
 
-            if (role == "Admin")
+            if (loggedInUser.Role == "Admin")
             {
                 nextForm = new FrmAdmin();
             }
-            else if (role == "Student")
+            else if (loggedInUser.Role == "Student")
             {
-                nextForm = new FrmStudents();
+                nextForm = new FrmStudents(loggedInUser);
             }
-            else if (role == "Staff")
+            else if (loggedInUser.Role == "Staff")
             {
                 nextForm = new FrmStaff();
             }
