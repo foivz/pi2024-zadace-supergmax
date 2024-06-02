@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
+
 namespace Evaluation_Manager
 {
     public partial class FrmLogin : Form
@@ -33,7 +35,6 @@ namespace Evaluation_Manager
             }
             else
             {
-
                 var teacher = TeacherRepository.GetTeacher(txtUsername.Text);
 
                 if (teacher != null && txtPassword.Text == teacher.Password)
