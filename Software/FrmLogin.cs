@@ -29,8 +29,16 @@ namespace Evaluation_Manager
 
                 if (user != null && txtPassword.Text == user.Password)
                 {
-                    FrmStudentMenu frmStudentMenu = new FrmStudentMenu(user);
-                    frmStudentMenu.Show();
+                    if (user.Role == "Admin")
+                    {
+                        FrmAdminMenu frmAdminMenu = new FrmAdminMenu(user);
+                        frmAdminMenu.Show();
+                    }
+                    else
+                    {
+                        FrmStudentMenu frmStudentMenu = new FrmStudentMenu(user);
+                        frmStudentMenu.Show();
+                    }
                     this.Hide();
                 }
                 else
@@ -39,6 +47,7 @@ namespace Evaluation_Manager
                 }
             }
         }
+
 
 
         private void pictureBox1_Click(object sender, EventArgs e)
